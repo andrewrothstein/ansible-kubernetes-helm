@@ -1,36 +1,11 @@
 ---
-- name: download...
-  become: yes
-  become_user: root
-  get_url: >-
-    url={{kubernetes_helm_url}}
-    dest=/tmp/{{kubernetes_helm_tgz}}
-    mode=0644
+- name: resolve platform specific vars
+  include_vars: "{{item}}"
+  with_first_found:
+    - files:
+        - "{{ansible_distribution}}-{{ansible_distribution_release}}.yml"
+        - "{{ansible_distribution}}.yml"
+        - "{{ansible_os_family}}.yml"
+      skip: true
 
-- name: make install dir
-  become: yes
-  become_user: root
-  file: >-
-    path={{kubernetes_helm_install_dir}}
-    state=directory
-    mode=0755
-
-- name: unarchive
-  become: yes
-  become_user: root
-  unarchive: >-
-    copy=no
-    src=/tmp/{{kubernetes_helm_tgz}}
-    dest={{kubernetes_helm_install_dir}}
-    creates={{kubernetes_helm_install_dir}}/{{kubernetes_helm_platform}}
-
-- name: link
-  become: yes
-  become_user: root
-  with_items:
-    - helm
-  file: >-
-    src={{kubernetes_helm_install_dir}}/{{kubernetes_helm_platform}}/{{item}}
-    dest={{kubernetes_helm_bin_dir}}/{{item}}
-    state=link
-
+- include: '{{kubernetes_helm_installer | default("tgz")}}.yml'

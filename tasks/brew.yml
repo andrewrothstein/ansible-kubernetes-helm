@@ -1,0 +1,8 @@
+---
+- name: install casks
+  become: '{{kubernetes_helm_privilege_escalate|default(False)}}'
+  become_user: root
+  with_items: '{{kubernetes_helm_casks | default(["helm"])}}'
+  homebrew_cask: >-
+    name={{item}}
+    state=present
