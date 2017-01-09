@@ -5,6 +5,7 @@
   get_url: >-
     url={{kubernetes_helm_url}}
     dest=/tmp/{{kubernetes_helm_tgz}}
+    checksum={{kubernetes_helm_checksum}}
     mode=0644
 
 - name: make install dir
