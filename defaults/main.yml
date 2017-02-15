@@ -1,6 +1,8 @@
 ---
 kubernetes_helm_mirror: https://storage.googleapis.com/kubernetes-helm
-kubernetes_helm_ver: v2.1.3
+kubernetes_helm_ver: v2.2.0
 kubernetes_helm_platform: linux-amd64
-kubernetes_helm_checksum: sha256:8bb6f9d336ca7913556e463c5b65eb8d69778c518df2fab0d20be943fbf0efc1
+kubernetes_helm_checksums:
+  linux-amd64: sha256:cc58f15479326a16b61cd7740d6285413a9a3d69972ada254bc3b83fb63d1e81
+  darwin-amd64: sha256:aa8031a0bc371a16b78ca8d0ee88891cc573cc746003781ee972c6164f8e7de6
 kubernetes_helm_bin_dir: /usr/local/bin
