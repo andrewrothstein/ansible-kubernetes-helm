@@ -1,4 +1,18 @@
 ---
+# Assumed vars and example from CircleCI
+# CIRCLE_PROJECT_REPONAME: ansible-kubernetes-helm
+
+# Registry credentials:
+# DOCKER_USER: andrewrothstein
+# DOCKER_PASSWORD: d88be5ba-f405-11e6-8852-234995e46dba
+# DOCKER_EMAIL: andrew.rothstein@gmail.com
+# DOCKER_REGISTRY: quay.io
+
+# Container building the ONBUILD way...
+# DOCKER_UPSTREAM: docker-ansible-role
+# needs read access to quay.io/andrewrothstein/${DOCKER_UPSTREAM}:${OS}
+# builds tagged containers named quay.io/andrewrothstein/docker-${CIRCLE_PROJECT_REPONAME}:${OS}
+
 machine:
   services:
     - docker
@@ -8,6 +22,7 @@ dependencies:
     - sudo -H pip install --upgrade pip
     - sudo -H pip install circleci-helpers ansible-galaxy-local-deps
     - ansible-galaxy-local-deps-write
+    - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD -e $DOCKER_EMAIL $DOCKER_REGISTRY 
 
 test:
   override:
@@ -24,15 +39,21 @@ test:
               - OS=ubuntu_xenial
 
             before_script:
-              - env | sort
-              - export UPSTREAM=andrewrothstein/docker-ansible-role
-
+              - export UPSTREAM_CONTAINER=${DOCKER_REGISTRY}/${DOCKER_USER}/${DOCKER_UPSTREAM}:$OS
+              - export TARGET_CONTAINER=${DOCKER_USER}/docker-$CIRCLE_PROJECT_REPONAME:$OS
+              - export DOCKER_FILE=Dockerfile.$OS
+              - export DOCKER_BUILD_DIR=.
+              
             script:
-              - echo "FROM $UPSTREAM:$OS" > Dockerfile.$OS
-              - docker build -t $CIRCLE_PROJECT_REPONAME:$OS -f Dockerfile.$OS .
+              - echo "FROM $UPSTREAM_CONTAINER" > $DOCKER_FILE
+              - docker build --rm=false -t $TARGET_CONTAINER -f $DOCKER_FILE $DOCKER_BUILD_DIR
 
             after_script:
-              - docker images $CIRCLE_PROJECT_REPONAME:$OS
+              - docker images $TARGET_CONTAINER
+              - docker tag $TARGET_CONTAINER $DOCKER_REGISTRY/$TARGET_CONTAINER
+              - docker push $DOCKER_REGISTRY/$TARGET_CONTAINER
+
+              - docker tag $TARGET_CONTAINER
           EHD
       :
         parallel: true
