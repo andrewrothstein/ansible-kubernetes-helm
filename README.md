@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-kubernetes-helm.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-kubernetes-helm)
 andrewrothstein.kubernetes-helm
 =========
 
