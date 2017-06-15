@@ -1,6 +1,6 @@
 andrewrothstein.kubernetes-helm
 =========
-[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-kubernetes-helm.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-kubernetes-helm)
+[![Build Status](https://travis-ci.org/andrewrothstein/ansible-kubernetes-helm.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-kubernetes-helm)
 
 Installs Kubernetes [Helm](https://helm.sh)
 
