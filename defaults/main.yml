@@ -6,3 +6,4 @@ kubernetes_helm_checksums:
   darwin-amd64: sha256:1d66fcaa472fcf30bfe8cfedeb5055272d0a571f97f4a82b8219e539fc6ae4bd
   linux-amd64: sha256:96f74ff04ec7eb38e5f53aba73132bfe4d6b81168f20574dad25a9bcaceec81b
 kubernetes_helm_bin_dir: /usr/local/bin
+kubernetes_helm_cleanup: False
