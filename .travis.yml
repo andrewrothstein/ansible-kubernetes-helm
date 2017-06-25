@@ -28,7 +28,7 @@ env:
   - OS=debian_jessie
   - OS=ubuntu_trusty
   - OS=ubuntu_xenial
-    
+
 before_install:
   - pip install ansible-galaxy-local-deps dcb==0.0.14
   - ansible-galaxy-local-deps-write

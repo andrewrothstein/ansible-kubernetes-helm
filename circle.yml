@@ -11,7 +11,7 @@ dependencies:
 
 test:
   override:
-    - ? | 
+    - ? |
           circle-matrix <<"EHD"
             env:
               - OS=alpine_3.3
