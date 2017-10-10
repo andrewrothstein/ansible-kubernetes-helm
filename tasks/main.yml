@@ -10,4 +10,4 @@
       paths:
         - '{{role_path}}/vars'
 
-- include_tasks: '{{kubernetes_helm_installer | default("tgz")}}.yml'
+- include: '{{kubernetes_helm_installer | default("tgz")}}.yml'
