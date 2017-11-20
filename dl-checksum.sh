@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=v2.7.0
+VER=v2.7.2
 MIRROR=https://storage.googleapis.com/kubernetes-helm
 wget $MIRROR/helm-$VER-darwin-amd64.tar.gz
 wget $MIRROR/helm-$VER-linux-amd64.tar.gz

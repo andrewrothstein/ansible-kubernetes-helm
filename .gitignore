@@ -2,3 +2,5 @@
 *.retry
 .ansible-roles/
 *.tar.gz
+Dockerfile.*
+requirements.yml
