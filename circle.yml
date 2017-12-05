@@ -18,6 +18,7 @@ test:
               - OS=alpine_3.4
               - OS=alpine_3.5
               - OS=alpine_3.6
+              - OS=alpine_3.7
               - OS=alpine_edge
               - OS=archlinux_latest
               - OS=centos_7
