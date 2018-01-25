@@ -3,7 +3,7 @@
   become: yes
   stat:
     path: '{{kubernetes_helm_install_dir}}'
-  change_when: false
+  changed_when: false
   register: kubernetes_helm_binary_dir
 
 - when: not kubernetes_helm_binary_dir.stat.exists
