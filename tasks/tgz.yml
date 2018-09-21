@@ -50,5 +50,3 @@
     src: '{{kubernetes_helm_install_dir}}/{{kubernetes_helm_platform}}/{{item}}'
     dest: '{{kubernetes_helm_bin_dir}}/{{item}}'
     state: link
-
-

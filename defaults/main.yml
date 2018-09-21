@@ -30,8 +30,4 @@ kubernetes_helm_checksums:
     linux-amd64: sha256:0fa2ed4983b1e4a3f90f776d08b88b0c73fd83f305b5b634175cb15e61342ffe
     # https://storage.googleapis.com/kubernetes-helm/helm-v2.10.0-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:5b6bcdb637623f7945a9e3506ba5bdca0436a8fb57b2c2e4871f37289588cc6e
-
-
-
 kubernetes_helm_bin_dir: /usr/local/bin
-
