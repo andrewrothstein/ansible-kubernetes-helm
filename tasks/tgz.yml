@@ -2,7 +2,7 @@
 - name: check for installation of helm
   become: yes
   stat:
-    path: '{{kubernetes_helm_install_dir}}'
+    path: '{{ kubernetes_helm_install_dir }}'
   changed_when: false
   register: kubernetes_helm_binary_dir
 
@@ -12,16 +12,16 @@
       become: yes
       become_user: root
       get_url:
-        url: '{{kubernetes_helm_url}}'
-        dest: /tmp/{{kubernetes_helm_tgz}}
-        checksum: '{{kubernetes_helm_checksum}}'
+        url: '{{ kubernetes_helm_url }}'
+        dest: /tmp/{{ kubernetes_helm_tgz }}
+        checksum: '{{ kubernetes_helm_checksum }}'
         mode: 0644
 
     - name: make install dir
       become: yes
       become_user: root
       file:
-        path: '{{kubernetes_helm_install_dir}}'
+        path: '{{ kubernetes_helm_install_dir }}'
         state: directory
         mode: 0755
 
@@ -30,15 +30,15 @@
       become_user: root
       unarchive:
         copy: no
-        src: /tmp/{{kubernetes_helm_tgz}}
-        dest: '{{kubernetes_helm_install_dir}}'
-        creates: '{{kubernetes_helm_install_dir}}/{{kubernetes_helm_platform}}'
+        src: /tmp/{{ kubernetes_helm_tgz }}
+        dest: '{{ kubernetes_helm_install_dir }}'
+        creates: '{{ kubernetes_helm_install_dir }}/{{ kubernetes_helm_platform }}'
   always:
     - name: cleanup...
       become: yes
       become_user: root
       file:
-        path: /tmp/{{kubernetes_helm_tgz}}
+        path: /tmp/{{ kubernetes_helm_tgz }}
         state: absent
 
 - name: link
@@ -47,6 +47,6 @@
   with_items:
     - helm
   file:
-    src: '{{kubernetes_helm_install_dir}}/{{kubernetes_helm_platform}}/{{item}}'
-    dest: '{{kubernetes_helm_bin_dir}}/{{item}}'
+    src: '{{ kubernetes_helm_install_dir }}/{{ kubernetes_helm_platform }}/{{ item }}'
+    dest: '{{ kubernetes_helm_bin_dir }}/{{ item }}'
     state: link

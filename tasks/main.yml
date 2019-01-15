@@ -1,13 +1,13 @@
 ---
 - name: resolve platform specific vars
-  include_vars: '{{item}}'
+  include_vars: '{{ item }}'
   with_first_found:
     - files:
-        - '{{ansible_distribution}}-{{ansible_distribution_release}}.yml'
-        - '{{ansible_distribution}}.yml'
-        - '{{ansible_os_family}}.yml'
+        - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
+        - '{{ ansible_distribution }}.yml'
+        - '{{ ansible_os_family }}.yml'
       skip: true
       paths:
-        - '{{role_path}}/vars'
+        - '{{ role_path }}/vars'
 
-- include_tasks: '{{kubernetes_helm_installer | default("tgz")}}.yml'
+- include_tasks: '{{ kubernetes_helm_installer | default("tgz") }}.yml'
