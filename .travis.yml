@@ -9,6 +9,7 @@ env:
 - OS=alpine_3.6
 - OS=alpine_3.7
 - OS=alpine_3.8
+- OS=alpine_3.9
 - OS=alpine_edge
 - OS=archlinux_latest
 - OS=centos_7
@@ -21,6 +22,7 @@ env:
 - OS=fedora_27
 - OS=fedora_28
 - OS=fedora_29
+- OS=fedora_30
 - OS=ubuntu_bionic
 - OS=ubuntu_trusty
 - OS=ubuntu_xenial
