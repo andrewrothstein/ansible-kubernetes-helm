@@ -1,36 +1,34 @@
----
+dependencies:
+- role: andrewrothstein.unarchive-deps
+  version: v1.0.12
 galaxy_info:
   author: Andrew Rothstein
-  description: installs kubernetes helm
   company: BlackRock
+  description: installs kubernetes helm
+  galaxy_tags:
+  - development
+  - paas
+  - k8s
+  - helm
   license:
-    - MIT
+  - MIT
   min_ansible_version: 2.0
   platforms:
-    - name: EL
-      versions:
-        - all
-    - name: Fedora
-      versions:
-        - all
-    - name: Ubuntu
-      versions:
-        - all
-    - name: Debian
-      versions:
-        - jessie
-    - name: Alpine
-      versions:
-        - all
-    - name: macOS
-      versions:
-        - all
-  galaxy_tags:
-    - development
-    - paas
-    - k8s
-    - helm
-
-dependencies:
-  - src: andrewrothstein.unarchive-deps
-    version: v1.0.10
+  - name: EL
+    versions:
+    - all
+  - name: Fedora
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - jessie
+  - name: Alpine
+    versions:
+    - all
+  - name: macOS
+    versions:
+    - all
