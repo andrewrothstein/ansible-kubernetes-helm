@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=v2.13.1
+VER=v2.14.0
 DIR=~/Downloads
 MIRROR=https://storage.googleapis.com/kubernetes-helm
 
