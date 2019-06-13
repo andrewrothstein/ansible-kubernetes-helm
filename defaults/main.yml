@@ -1,6 +1,6 @@
 ---
 kubernetes_helm_mirror: https://storage.googleapis.com/kubernetes-helm
-kubernetes_helm_ver: v2.14.0
+kubernetes_helm_ver: v2.14.1
 kubernetes_helm_platform: linux-amd64
 kubernetes_helm_checksums:
   v2.7.2:
@@ -79,5 +79,23 @@ kubernetes_helm_checksums:
     linux-arm64: sha256:714ba7433545ae6ccebc7a8cda9c63f86eaba0ec2f89a65056da181d230b389a
     # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.0-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:92ae686de2dc74783aebfb0b7f1a95ebf2b3b62814c37adae2b2e7fa9cc92ceb
+  v2.14.1:
+    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.1-darwin-amd64.tar.gz.sha256
+    darwin-amd64: sha256:392ec847ecc5870a48a39cb0b8d13c8aa72aaf4365e0315c4d7a2553019a451c
+    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.1-linux-amd64.tar.gz.sha256
+    linux-amd64: sha256:804f745e6884435ef1343f4de8940f9db64f935cd9a55ad3d9153d064b7f5896
+    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.1-linux-arm.tar.gz.sha256
+    linux-arm: sha256:87bc9dca56a9bc61a55fc96c0064f732509ba743852361a2116b7e37166a5349
+    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.1-linux-arm64.tar.gz.sha256
+    linux-arm64: sha256:60b4357e2280a480819ef194da559b3adc7ec3e6a9ef084ee42f31f47fe80aed
+    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.1-linux-386.tar.gz.sha256
+    linux-386: sha256:bdc175a716222ccfc81ef05b1a7fe0d05d5a0b6d27754739f38cd0e5f4945738
+    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.1-linux-ppc64le.tar.gz.sha256
+    linux-ppc64le: sha256:8b827c7a1ccfc3eb230447356b15af3ce9dfaa7c1e56b1a7e65995a561f91bcf
+    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.1-linux-s390x.tar.gz.sha256
+    linux-s390x: sha256:ef52e193f177435ad6b77ee1dfd7756f4eceff67faddd07a6f2ea5e1aa4b6d54
+    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.1-windows-amd64.zip.sha256
+    windows-amd64: sha256:604780d3fabeb27e7ab7a30c6e29ce64bcd2203501ea35e5231c97965b0255a0
+
 
 kubernetes_helm_bin_dir: /usr/local/bin
