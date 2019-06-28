@@ -6,7 +6,7 @@
         - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
         - '{{ ansible_distribution }}.yml'
         - '{{ ansible_os_family }}.yml'
-      errors: "ignore"
+      skip: true
       paths:
         - '{{ role_path }}/vars'
 
