@@ -3,5 +3,5 @@
   become: '{{ kubernetes_helm_privilege_escalate | default(False) }}'
   become_user: root
   homebrew:
-    name: '{{ kubernetes_helm_brew_pakage }}'
+    name: '{{ kubernetes_helm_brew_package }}'
     state: present
