@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=v2.14.2
+VER=v2.14.3
 DIR=~/Downloads
 MIRROR=https://storage.googleapis.com/kubernetes-helm
 
@@ -7,12 +7,13 @@ MIRROR=https://storage.googleapis.com/kubernetes-helm
 dl()
 {
     OS=$1
-    PLATFORM=$2
+    ARCH=$2
     ARCHIVE_TYPE=$3
-    FILE=helm-$VER-$OS-$PLATFORM.${ARCHIVE_TYPE}.sha256
+    PLATFORM=${OS}-${ARCH}
+    FILE=helm-$VER-${PLATFORM}.${ARCHIVE_TYPE}.sha256
     URL=$MIRROR/$FILE
     printf "    # %s\n"  $URL
-    printf "    %s-%s: sha256:%s\n" $OS $PLATFORM `curl -SsL $URL`
+    printf "    %s: sha256:%s\n" $PLATFORM `curl -SsL $URL`
 }
 
 printf "  %s:\n" $VER
