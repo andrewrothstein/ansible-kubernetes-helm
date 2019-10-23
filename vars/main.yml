@@ -1,7 +1,8 @@
 ---
-kubernetes_helm_name: helm-{{kubernetes_helm_ver}}-{{kubernetes_helm_platform}}
-kubernetes_helm_tgz: '{{kubernetes_helm_name}}.tar.gz'
+kubernetes_helm_platform: '{{ kubernetes_helm_os }}-{{ kubernetes_helm_arch }}'
+kubernetes_helm_name: helm-{{ kubernetes_helm_ver }}-{{ kubernetes_helm_platform }}
+kubernetes_helm_archive: '{{kubernetes_helm_name}}.{{ kubernetes_helm_archive_type }}'
 
-kubernetes_helm_url: '{{kubernetes_helm_mirror}}/{{kubernetes_helm_tgz}}'
-kubernetes_helm_install_dir: '{{kubernetes_helm_bin_dir}}/helm-{{kubernetes_helm_ver}}'
-kubernetes_helm_checksum: '{{kubernetes_helm_checksums[kubernetes_helm_ver][kubernetes_helm_platform]}}'
+kubernetes_helm_url: '{{ kubernetes_helm_mirror }}/{{ kubernetes_helm_archive }}'
+kubernetes_helm_install_dir: '{{ kubernetes_helm_bin_dir }}/helm-{{ kubernetes_helm_ver }}'
+kubernetes_helm_checksum: '{{ kubernetes_helm_checksums[kubernetes_helm_ver][kubernetes_helm_platform] }}'

@@ -2,3 +2,4 @@
 kubernetes_helm_privilege_escalate: False
 kubernetes_helm_installer: brew
 kubernetes_helm_brew_package: kubernetes-helm
+kubernetes_helm_os: darwin

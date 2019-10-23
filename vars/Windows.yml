@@ -1,0 +1,3 @@
+---
+kubernetes_helm_os: windows
+kubernetes_helm_archive_type: zip

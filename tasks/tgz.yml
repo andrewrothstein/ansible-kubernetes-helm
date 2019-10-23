@@ -13,7 +13,7 @@
       become_user: root
       get_url:
         url: '{{ kubernetes_helm_url }}'
-        dest: /tmp/{{ kubernetes_helm_tgz }}
+        dest: /tmp/{{ kubernetes_helm_archive }}
         checksum: '{{ kubernetes_helm_checksum }}'
         mode: 0644
 
@@ -30,7 +30,7 @@
       become_user: root
       unarchive:
         copy: no
-        src: /tmp/{{ kubernetes_helm_tgz }}
+        src: /tmp/{{ kubernetes_helm_archive }}
         dest: '{{ kubernetes_helm_install_dir }}'
         creates: '{{ kubernetes_helm_install_dir }}/{{ kubernetes_helm_platform }}'
   always:
@@ -38,7 +38,7 @@
       become: yes
       become_user: root
       file:
-        path: /tmp/{{ kubernetes_helm_tgz }}
+        path: /tmp/{{ kubernetes_helm_archive }}
         state: absent
 
 - name: link
