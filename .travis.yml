@@ -18,6 +18,7 @@ env:
 - OS=alpine_edge
 - OS=archlinux_latest
 - OS=centos_7
+- OS=centos_8
 - OS=debian_buster
 - OS=debian_jessie
 - OS=debian_stretch
