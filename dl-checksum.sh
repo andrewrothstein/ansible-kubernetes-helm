@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 DIR=~/Downloads
-MIRROR=https://storage.googleapis.com/kubernetes-helm
+MIRROR=https://get.helm.sh
 
 
 dl()
@@ -29,4 +29,4 @@ dl_ver () {
     dl $ver windows amd64 zip
 }
 
-dl_ver ${1:-v2.16.0}
+dl_ver ${1:-v3.0.0}

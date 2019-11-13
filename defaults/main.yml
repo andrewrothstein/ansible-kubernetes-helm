@@ -1,6 +1,6 @@
 ---
-kubernetes_helm_mirror: https://storage.googleapis.com/kubernetes-helm
-kubernetes_helm_ver: v2.16.0
+kubernetes_helm_mirror: https://get.helm.sh
+kubernetes_helm_ver: v3.0.0
 kubernetes_helm_os: linux
 kubernetes_helm_arch: amd64
 kubernetes_helm_archive_type: tar.gz
@@ -9,250 +9,265 @@ kubernetes_helm_bin_dir: /usr/local/bin
 
 kubernetes_helm_checksums:
   v2.7.2:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.7.2-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.7.2-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:5058142bcd6e16b7e01695a8f258d27ae0b6469caf227ddf6aa2181405e6aa8e
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.7.2-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.7.2-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:9f04c4824fc751d6c932ae5b93f7336eae06e78315352aa80241066aa1d66c49
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.7.2-linux-arm.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.7.2-linux-arm.tar.gz.sha256
     linux-arm: sha256:64b18552c9c63aba52e5b95ccf5056de84a11cc7339008e2c7dbba3ad099f9b6
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.7.2-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.7.2-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:4db6d202693e8d045f100953eb9dfe4225830fca80fd95bd9e86224342e6a0b8
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.7.2-linux-386.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.7.2-linux-386.tar.gz.sha256
     linux-386: sha256:642dc34f1a6862b532c4296ff26fee3e65979edfc320ecb62f225d9a564e5f2f
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.7.2-linux-ppc64le.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.7.2-linux-ppc64le.tar.gz.sha256
     linux-ppc64le: sha256:764399f3aaed9de2d31a048dc2e2a960e5554fff272b103bca2fca10ab53e63f
   v2.8.0:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.8.0-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.8.0-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:6d38a8a59f5793c01e4adb3278e281088d4f76d1ac9388a3a1d1a32d4790944a
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.8.0-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.8.0-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:6e1f5957f9c7cec8463f38cf658bea0cf225fc324236617b23fe9044e9dd4ba7
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.8.0-linux-arm.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.8.0-linux-arm.tar.gz.sha256
     linux-arm: sha256:15319e9ec6e4c7d07d78f7db50b4cb8514bc2cfab7f1dfff5eb4de823f7ebe9d
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.8.0-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.8.0-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:69e207f7e8dde6aa0a411d95fc7a01fa41f80a9ebe071854ba27b149fcfb7011
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.8.0-linux-386.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.8.0-linux-386.tar.gz.sha256
     linux-386: sha256:4d5521d69bc4924ff71df3d5a7884bd96a247e935e82903b295101914ec246f0
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.8.0-linux-ppc64le.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.8.0-linux-ppc64le.tar.gz.sha256
     linux-ppc64le: sha256:081e392291e596764333634a9cb94742455e5ff5574c08c7fa8f32827a3dd2ab
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.8.0-windows-amd64.zip.sha256
+    # https://get.helm.sh/helm-v2.8.0-windows-amd64.zip.sha256
     windows-amd64: sha256:903077f8681a9e6ba4c95c569285c548e8c163b0739b339da8f7ea9e3507a944
   v2.8.1:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.8.1-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.8.1-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:dd5c929516cf0f77fd2232094979b404a6602c6ed3a052d500ab69e89f49d0b8
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.8.1-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.8.1-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:7df7e9eb1b7fde74cc9741682944e620793e618761ccfa8d4bfb355791b76f1d
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.8.1-linux-arm.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.8.1-linux-arm.tar.gz.sha256
     linux-arm: sha256:1f459a8899d18267f0d7cfa39ed31748f252ad490da25f9321347a67ba52ebba
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.8.1-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.8.1-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:cdb35632ef4d8744c17dfd7d158dc2195b4772a098e5d3f1e3a65859b649c7cd
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.8.1-linux-386.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.8.1-linux-386.tar.gz.sha256
     linux-386: sha256:f6a07d97a4f8fffa6596c43a013fe0ee618b67ff11d2e1e347bb2db8b8a65de2
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.8.1-linux-ppc64le.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.8.1-linux-ppc64le.tar.gz.sha256
     linux-ppc64le: sha256:c3a83c71173eacacc7019e36e75d05b58419cdcd886b53ea77642e30ede765ff
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.8.1-windows-amd64.zip.sha256
+    # https://get.helm.sh/helm-v2.8.1-windows-amd64.zip.sha256
     windows-amd64: sha256:8fbc9e425eb5f806b7f562a03ed03e12fad702a8ce7fc52b7b3409522f33c4f9
   v2.9.0:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.9.0-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.9.0-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:17ab41a11cc31e8e2774718c556d97428235f35c5309f4353b93b47a8984bc6a
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.9.0-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.9.0-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:065f70df6a5c2fb6e89e92cd8297459feccc8cfb5b8ca50aa1b06bb863bcd22e
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.9.0-linux-arm.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.9.0-linux-arm.tar.gz.sha256
     linux-arm: sha256:a9d7490d0061e70f17428117c4b8958f87a0812a030d71c60a1e125ea3816456
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.9.0-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.9.0-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:0ba9acee1cd9d6e49ccbbfc10e37e9b8b6356aaeb839757126a7d47b7ddba826
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.9.0-linux-386.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.9.0-linux-386.tar.gz.sha256
     linux-386: sha256:8bca8ac35babb011c107a50f6cb72095f9eb200198856e589ecb359eb958ae92
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.9.0-linux-ppc64le.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.9.0-linux-ppc64le.tar.gz.sha256
     linux-ppc64le: sha256:21cedd8fb0f88f4c8966d03e2a197d1cbc5318662516e15c964983ce73d2255b
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.9.0-windows-amd64.zip.sha256
+    # https://get.helm.sh/helm-v2.9.0-windows-amd64.zip.sha256
     windows-amd64: sha256:6b8fbe206511ab790a4f5be690e42fe418dd95fc6a69714ed03cfa70c488827d
   v2.9.1:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.9.1-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.9.1-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:3bf676b6adbc4bb1a513c22c59f8d183fed278c9cb4db5808473541888f1efcb
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.9.1-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.9.1-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:56ae2d5d08c68d6e7400d462d6ed10c929effac929fedce18d2636a9b4e166ba
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.9.1-linux-arm.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.9.1-linux-arm.tar.gz.sha256
     linux-arm: sha256:59bb8c8f499027d8ce63452cf04c0079de4eeef31a388783d108781bed462b47
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.9.1-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.9.1-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:1ac359ac32acfeedbe75f562bf7d245814c61f136013bd5d7bb887079cd542a4
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.9.1-linux-386.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.9.1-linux-386.tar.gz.sha256
     linux-386: sha256:d6413731c45ae45a55020598641703d7ac2abb1c6f4d0f04f4cc037d6e98c401
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.9.1-linux-ppc64le.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.9.1-linux-ppc64le.tar.gz.sha256
     linux-ppc64le: sha256:22671d0a5667c10c11fedf6901eadcbedd66bc0024cc6e8db3669df8feef230e
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.9.1-windows-amd64.zip.sha256
+    # https://get.helm.sh/helm-v2.9.1-windows-amd64.zip.sha256
     windows-amd64: sha256:da8a11ec91a19f4a7c1d62f4e11fd3b88d4ce722878451371c197d8f96295fbe
   v2.10.0:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.10.0-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.10.0-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:7c4e6bfbc211d6b984ffb4fa490ce9ac112cc4b9b8d859ece27045b8514c1ed1
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.10.0-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.10.0-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:0fa2ed4983b1e4a3f90f776d08b88b0c73fd83f305b5b634175cb15e61342ffe
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.10.0-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.10.0-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:5b6bcdb637623f7945a9e3506ba5bdca0436a8fb57b2c2e4871f37289588cc6e
   v2.11.0:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.11.0-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.11.0-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:551b13a398749ae3e0a5c54d3078f6e3bee552c5d6a0bf6f338cab64ce38ab0f
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.11.0-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.11.0-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:02a4751586d6a80f6848b58e7f6bd6c973ffffadc52b4c06652db7def02773a1
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.11.0-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.11.0-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:7b3532634fb98151af23d32583187064f7ad18df87f96c456a15bc4ed82ae00e
   v2.12.0:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.12.0-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.12.0-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:2b7e4fb460d7c641be1b90aad38a882462f88fd47975cc91aa17600ab5152590
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.12.0-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.12.0-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:9f96a6e4fc52b5df906da381532cc2eb2f3f57cc203ccaec2b11cf5dc26a7dfc
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.12.0-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.12.0-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:b4d59acf8eba555ae17f3278e930756e3a99aba368538960f6dc26f8d61a1eab
   v2.12.2:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.12.2-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.12.2-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:edad6d5e594408b996b8d758a04948f89dab15fa6c6ea6daee3709f8c099df6d
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.12.2-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.12.2-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:b7eb700e28234bd63247dceda77b2928b75bf2a42ef7667e95c96721547175a4
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.12.2-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.12.2-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:10f8e200fdfe4f4b6b0cbe6f5420b99eec2a34f666b4126ae7881b9bd6dddb39
   v2.12.3:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.12.3-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.12.3-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:3425a1b37954dabdf2ba37d5d8a0bd24a225bb8454a06f12b115c55907809107
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.12.3-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.12.3-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:ddad674aa723bb638bdb90843814b91810e8d87bcfcf367ffe7ccd9066cacd03
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.12.3-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.12.3-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:564a087915e07333d2335face555eaac63accd669fb63672ae1b66a73144ac50
   v2.13.0:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.13.0-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.13.0-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:15eca6ad225a8279de80c7ced42305e24bc5ac60bb7d96f2d2fa4af86e02c794
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.13.0-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.13.0-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:afb51c43ed83fe8bac62f7e47872019cf1c0d8a1927d69fb963959c6accc77b5
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.13.0-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.13.0-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:166318b2159613f87a7cb02af1614c96244b3d3c119f8e010429c1b4449681d5
   v2.13.1:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.13.1-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.13.1-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:c1967c1dfcd6c921694b80ededdb9bd1beb27cb076864e58957b1568bc98925a
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.13.1-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.13.1-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:25ed0b72435007976306f9f44724e1e965bd9e7be839fb4f9851156ab69f0092
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.13.1-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.13.1-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:c9564c4133349b98a8c1dda42fdb6545f6e4bfdf0980cdfc38cf76d2f8e5e701
   v2.14.0:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.0-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.0-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:b5f6a1e642971af1363cadbe1f7f37c029c11dd93813151b521c0dbeacfbdaa9
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.0-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.0-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:714ba7433545ae6ccebc7a8cda9c63f86eaba0ec2f89a65056da181d230b389a
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.0-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.0-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:92ae686de2dc74783aebfb0b7f1a95ebf2b3b62814c37adae2b2e7fa9cc92ceb
   v2.14.1:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.1-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.1-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:392ec847ecc5870a48a39cb0b8d13c8aa72aaf4365e0315c4d7a2553019a451c
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.1-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.1-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:804f745e6884435ef1343f4de8940f9db64f935cd9a55ad3d9153d064b7f5896
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.1-linux-arm.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.1-linux-arm.tar.gz.sha256
     linux-arm: sha256:87bc9dca56a9bc61a55fc96c0064f732509ba743852361a2116b7e37166a5349
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.1-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.1-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:60b4357e2280a480819ef194da559b3adc7ec3e6a9ef084ee42f31f47fe80aed
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.1-linux-386.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.1-linux-386.tar.gz.sha256
     linux-386: sha256:bdc175a716222ccfc81ef05b1a7fe0d05d5a0b6d27754739f38cd0e5f4945738
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.1-linux-ppc64le.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.1-linux-ppc64le.tar.gz.sha256
     linux-ppc64le: sha256:8b827c7a1ccfc3eb230447356b15af3ce9dfaa7c1e56b1a7e65995a561f91bcf
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.1-linux-s390x.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.1-linux-s390x.tar.gz.sha256
     linux-s390x: sha256:ef52e193f177435ad6b77ee1dfd7756f4eceff67faddd07a6f2ea5e1aa4b6d54
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.1-windows-amd64.zip.sha256
+    # https://get.helm.sh/helm-v2.14.1-windows-amd64.zip.sha256
     windows-amd64: sha256:604780d3fabeb27e7ab7a30c6e29ce64bcd2203501ea35e5231c97965b0255a0
   v2.14.2:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.2-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.2-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:9469da75bb357bc325c985dead224480bbacc7aa8aecff74089dff97e64655d0
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.2-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.2-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:9f50e69cf5cfa7268b28686728ad0227507a169e52bf59c99ada872ddd9679f0
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.2-linux-arm.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.2-linux-arm.tar.gz.sha256
     linux-arm: sha256:2711d47f61b7e87ecbfa9667495ce1f3542060618df897418e9584c20769a484
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.2-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.2-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:1f86fc294382365f4dfd9fa08c62337d248f7c8662e3166e24ce083264f105f2
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.2-linux-386.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.2-linux-386.tar.gz.sha256
     linux-386: sha256:4cdf990e53bcee8378a81f0f81857afe94624967d4c1ad8e5be47a5a0b428944
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.2-linux-ppc64le.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.2-linux-ppc64le.tar.gz.sha256
     linux-ppc64le: sha256:2ef01ab4a3d526a63ed5d2dcbf81ae1aedd49d44c7e2ecee304b12750d428efe
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.2-linux-s390x.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.2-linux-s390x.tar.gz.sha256
     linux-s390x: sha256:6a42e33bc111ded7349c34fde01286990507173e9b3ccfe5ad3a0532d4f581a8
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.2-windows-amd64.zip.sha256
+    # https://get.helm.sh/helm-v2.14.2-windows-amd64.zip.sha256
     windows-amd64: sha256:e492fe6b037487098f749722a0836b2766c2fe6e03214de918fa10a93ba6e630
   v2.14.3:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.3-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.3-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:3f907cac93c6b18c36910b15af02ddc3d454b59a870899afdfa75548f9a7658d
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.3-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.3-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:38614a665859c0f01c9c1d84fa9a5027364f936814d1e47839b05327e400bf55
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.3-linux-arm.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.3-linux-arm.tar.gz.sha256
     linux-arm: sha256:52535e0811fd68c406e41be240446709d228ca86db1de47a0deb8c8de8e82c8b
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.3-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.3-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:cfcbb577f272bcedef9e4191a619d98d7c622810d4d2445b888743bf3ab908ae
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.3-linux-386.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.3-linux-386.tar.gz.sha256
     linux-386: sha256:30774449e273e9095f793c4c7154abc5970916985fbc20ed66cc8ad844237479
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.3-linux-ppc64le.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.3-linux-ppc64le.tar.gz.sha256
     linux-ppc64le: sha256:b5de604a22cc405e3bf2a2b9d6c637768ad6bbfb124fa90f81905f2c51a13c95
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.3-linux-s390x.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.14.3-linux-s390x.tar.gz.sha256
     linux-s390x: sha256:2919ac9fdb5c2057e5af26b846b5fe030d20114ed1995223d37daeb8a2eccb7d
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.14.3-windows-amd64.zip.sha256
+    # https://get.helm.sh/helm-v2.14.3-windows-amd64.zip.sha256
     windows-amd64: sha256:42cd9ee605a6d7935b99ebaca4f21f93183baee44410344793c06099abd4b713
   v2.15.0:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.0-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.0-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:a68c032893a1c2d4285c1576ec9f6235a522c7b735424e7e188e6190d3da217e
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.0-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.0-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:50936867d24431a98777828f399b48063c3f66af1ec3ba96ef5a8fc8326ebe74
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.0-linux-arm.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.0-linux-arm.tar.gz.sha256
     linux-arm: sha256:b11d09dacb321b734670e51ccfa29fee5c8cc61d2b75f17decb2644d4e95252f
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.0-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.0-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:88c1d6907adc98993f424250b23a455c1615ea3a1c07de080ca48e1aee0996c1
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.0-linux-386.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.0-linux-386.tar.gz.sha256
     linux-386: sha256:498054d66691187ac7f96b5be2ed7412a14df8a0f003dcc314f8dae7e71ec19b
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.0-linux-ppc64le.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.0-linux-ppc64le.tar.gz.sha256
     linux-ppc64le: sha256:3a334871e9f9aa91ebbb52e18c8017429af7413e8730101c764a87d7205e0c8b
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.0-linux-s390x.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.0-linux-s390x.tar.gz.sha256
     linux-s390x: sha256:34c5d8382003e51beb33fc18bd4fd3ee050c0483885fe02e67a5ddf94d176ac0
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.0-windows-amd64.zip.sha256
+    # https://get.helm.sh/helm-v2.15.0-windows-amd64.zip.sha256
     windows-amd64: sha256:fa76beb2183dcb44efc60e53a67017dfa7c988762079c58aacea87b5da7a8819
   v2.15.1:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.1-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.1-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:f51830036f746b7f758a40bf49e02527cc5a9f1b78c5809023e570d318eaff5c
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.1-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.1-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:b4d366bd6625477b2954941aeb7b601946aa4226af6728e3a84eac4e62a84042
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.1-linux-arm.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.1-linux-arm.tar.gz.sha256
     linux-arm: sha256:3b3d7f1117309534eff7b664156d1ee542a285a183fe54d200cd865ff0d8e279
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.1-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.1-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:c7fc09b20d6cb26042e3f0b3f8788a930171d8d1eb8ec083677090563de39aaf
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.1-linux-386.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.1-linux-386.tar.gz.sha256
     linux-386: sha256:4bc1ec87efa27eda155261d261b7e1cad763bd2ee2c1db9d9c74efb53f7d2a46
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.1-linux-ppc64le.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.1-linux-ppc64le.tar.gz.sha256
     linux-ppc64le: sha256:96f13971ace3b12a8eced6bc59f41dd288b252e5cbdec6cf194800cd1cb207f2
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.1-linux-s390x.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.1-linux-s390x.tar.gz.sha256
     linux-s390x: sha256:aa5e387baba648442c69ded35f1e3abcfa4c7c6c92705a8f521582c63297a982
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.1-windows-amd64.zip.sha256
+    # https://get.helm.sh/helm-v2.15.1-windows-amd64.zip.sha256
     windows-amd64: sha256:39f408fef9a0debcfdc07617d18760ace269f6864ff0d0dc9bb171da5e80ec1e
   v2.15.2:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.2-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.2-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:0815dc44f9f1c5bcee1c130268bfca2ddf6425b60cf042d3b3c907c35ef11e31
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.2-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.2-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:a9d2db920bd4b3d824729bbe1ff3fa57ad27760487581af6e5d3156d1b3c2511
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.2-linux-arm.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.2-linux-arm.tar.gz.sha256
     linux-arm: sha256:2ba123cf90c154d15d9547319d73b9d6572c50fdb6732bdb5ebe88e3ca2d36e9
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.2-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.2-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:d8f9dcbd9de3ec90b5ee7cb3a94f646e98e1fb4135c44d64d564d9bc244528a2
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.2-linux-386.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.2-linux-386.tar.gz.sha256
     linux-386: sha256:571d7a953d07dca6fc41a3e3c94bd5a017965ba2946a0887f8e051de9d5bd103
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.2-linux-ppc64le.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.2-linux-ppc64le.tar.gz.sha256
     linux-ppc64le: sha256:efa08697c7721f94c9eb65f7fb76f6cad636fe3b8afee9821fc5503c3efb3991
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.2-linux-s390x.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.15.2-linux-s390x.tar.gz.sha256
     linux-s390x: sha256:1a74c2d865601c25c042a90d8039312ce26d442775ad7260632f505875e33ca7
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.15.2-windows-amd64.zip.sha256
+    # https://get.helm.sh/helm-v2.15.2-windows-amd64.zip.sha256
     windows-amd64: sha256:f77f8a7640259ea51f1c9480446bfa7a2ba43dc7ec41282d3616f04e6017037c
   v2.16.0:
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.16.0-darwin-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.16.0-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:4544c03e044ad19424136fb66267f21b620eeee46dee9ec7735288081ca8d12a
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.16.0-linux-amd64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.16.0-linux-amd64.tar.gz.sha256
     linux-amd64: sha256:2d9124f582a33b269f48215a00922b3dcf7a03f265499886ba956fbc03ff9892
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.16.0-linux-arm.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.16.0-linux-arm.tar.gz.sha256
     linux-arm: sha256:6df2f4f5e9ef8a5f52f9dd6143f064cd2cfe00ccb2b4b158a94b36e2261e82a6
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.16.0-linux-arm64.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.16.0-linux-arm64.tar.gz.sha256
     linux-arm64: sha256:ec580af4fc0a76bad094ac5d96d7b57c48d0bab0c5c75f6243abad82f250b3e7
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.16.0-linux-386.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.16.0-linux-386.tar.gz.sha256
     linux-386: sha256:1cbfb55b5a440227ab600868c7b1c8e78162306dcca880f6b816f98f6d19ba01
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.16.0-linux-ppc64le.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.16.0-linux-ppc64le.tar.gz.sha256
     linux-ppc64le: sha256:d66cff3a1f3ec9aa0f253e687c36a7e35b8928a392838c30d7c5599059baf164
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.16.0-linux-s390x.tar.gz.sha256
+    # https://get.helm.sh/helm-v2.16.0-linux-s390x.tar.gz.sha256
     linux-s390x: sha256:84ade41cd41959709e28fdafc45a54b72529da3f03aff3f9197bddb1d6bb2091
-    # https://storage.googleapis.com/kubernetes-helm/helm-v2.16.0-windows-amd64.zip.sha256
+    # https://get.helm.sh/helm-v2.16.0-windows-amd64.zip.sha256
     windows-amd64: sha256:be0b350393a1b6fbcb107a4bfe15bf81f9550b0c86a2a3465c4ce422f77c031d
+  v3.0.0:
+    # https://get.helm.sh/helm-v3.0.0-darwin-amd64.tar.gz.sha256
+    darwin-amd64: sha256:b3070a2893209eb0dfc2d55224e9989b0ccd38aed514ddbc2f0dcae88bd7251a
+    # https://get.helm.sh/helm-v3.0.0-linux-amd64.tar.gz.sha256
+    linux-amd64: sha256:10e1fdcca263062b1d7b2cb93a924be1ef3dd6c381263d8151dd1a20a3d8c0dc
+    # https://get.helm.sh/helm-v3.0.0-linux-arm.tar.gz.sha256
+    linux-arm: sha256:ac43445ff6942c75f338a62ed851a6ee5e01927ae09dbf2a09d0ef1a091d0647
+    # https://get.helm.sh/helm-v3.0.0-linux-arm64.tar.gz.sha256
+    linux-arm64: sha256:24c0ba00178d43435c786904fefaa9eca0dbabc605b73b15a01e4c90800d5e5c
+    # https://get.helm.sh/helm-v3.0.0-linux-386.tar.gz.sha256
+    linux-386: sha256:6ec57f36822addd7fcb6f672d27707e9d9c6a4a85de96adcdfb82ef8d98307be
+    # https://get.helm.sh/helm-v3.0.0-linux-ppc64le.tar.gz.sha256
+    linux-ppc64le: sha256:d9d8c296e5f1cef4f5ae7cfe88fd9f08a4f519c9ddb91dd56d6b0f0635f41533
+    # https://get.helm.sh/helm-v3.0.0-windows-amd64.zip.sha256
+    windows-amd64: sha256:ea3da9092214a11ed3a21a0b7bbd738c25b63cdefbb90f1c921aab7bbcce62c6
