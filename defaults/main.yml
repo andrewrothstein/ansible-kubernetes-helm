@@ -256,6 +256,23 @@ kubernetes_helm_checksums:
     linux-s390x: sha256:84ade41cd41959709e28fdafc45a54b72529da3f03aff3f9197bddb1d6bb2091
     # https://get.helm.sh/helm-v2.16.0-windows-amd64.zip.sha256
     windows-amd64: sha256:be0b350393a1b6fbcb107a4bfe15bf81f9550b0c86a2a3465c4ce422f77c031d
+  v2.16.1:
+    # https://get.helm.sh/helm-v2.16.1-darwin-amd64.tar.gz.sha256
+    darwin-amd64: sha256:34fc397ec4a992a451d130a962944315ca782242bbd05a8d732a2e74ca2b9153
+    # https://get.helm.sh/helm-v2.16.1-linux-amd64.tar.gz.sha256
+    linux-amd64: sha256:7eebaaa2da4734242bbcdced62cc32ba8c7164a18792c8acdf16c77abffce202
+    # https://get.helm.sh/helm-v2.16.1-linux-arm.tar.gz.sha256
+    linux-arm: sha256:dc4c322191827420bedb024ae4764189b3e5a19ea62a1662b048f6ef76e0e08b
+    # https://get.helm.sh/helm-v2.16.1-linux-arm64.tar.gz.sha256
+    linux-arm64: sha256:9badab17f79a0dfc99144bc77c451c998f61f1e2c97b515743238ae316148b1d
+    # https://get.helm.sh/helm-v2.16.1-linux-386.tar.gz.sha256
+    linux-386: sha256:224ee1fc2462e6f4baf3fd249b4f77f11c7d7c55e14f6e0ee52412c88c80ec2b
+    # https://get.helm.sh/helm-v2.16.1-linux-ppc64le.tar.gz.sha256
+    linux-ppc64le: sha256:8c7fd32bc11bac6858c5ff1adaf1233b0ef7f9a8c2c43778763860aeba3a89f3
+    # https://get.helm.sh/helm-v2.16.1-linux-s390x.tar.gz.sha256
+    linux-s390x: sha256:7872024de6a29c07d6bbd150ce9c8c09bff24a42e07a27b3951eb9d53c7c15ff
+    # https://get.helm.sh/helm-v2.16.1-windows-amd64.zip.sha256
+    windows-amd64: sha256:414d09b2559316c3dcb81cc448ba44cbbbf54a08a475998211d8dbe7217dd138
   v3.0.0:
     # https://get.helm.sh/helm-v3.0.0-darwin-amd64.tar.gz.sha256
     darwin-amd64: sha256:b3070a2893209eb0dfc2d55224e9989b0ccd38aed514ddbc2f0dcae88bd7251a
