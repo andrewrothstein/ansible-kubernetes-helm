@@ -25,8 +25,7 @@ dl_ver () {
     dl $ver linux arm64 tar.gz
     dl $ver linux 386 tar.gz
     dl $ver linux ppc64le tar.gz
-    dl $ver linux s390x tar.gz
     dl $ver windows amd64 zip
 }
 
-dl_ver ${1:-v3.0.1}
+dl_ver ${1:-v3.0.2}
