@@ -1,5 +1,5 @@
 ---
-- name: check for installation of helm
+- name: check for installation in {{ kubernetes_helm_install_dir }}
   become: yes
   stat:
     path: '{{ kubernetes_helm_install_dir }}'
@@ -8,16 +8,16 @@
 
 - when: not kubernetes_helm_binary_dir.stat.exists
   block:
-    - name: download...
+    - name: downloading {{ kubernetes_helm_url }}
       become: yes
       become_user: root
       get_url:
         url: '{{ kubernetes_helm_url }}'
-        dest: /tmp/{{ kubernetes_helm_archive }}
+        dest: '{{ kubernetes_helm_tmp_archive }}'
         checksum: '{{ kubernetes_helm_checksum }}'
         mode: 0644
 
-    - name: make install dir
+    - name: mkdir {{ kubernetes_helm_install_dir }}
       become: yes
       become_user: root
       file:
@@ -25,28 +25,28 @@
         state: directory
         mode: 0755
 
-    - name: unarchive
+    - name: unarchive {{ kubernetes_helm_tmp_archive }} to {{ kubernetes_helm_install_dir }}
       become: yes
       become_user: root
       unarchive:
         copy: no
-        src: /tmp/{{ kubernetes_helm_archive }}
+        src: '{{ kubernetes_helm_tmp_archive }}'
         dest: '{{ kubernetes_helm_install_dir }}'
-        creates: '{{ kubernetes_helm_install_dir }}/{{ kubernetes_helm_platform }}'
+        creates: '{{ kubernetes_helm_install_subdir }}'
   always:
-    - name: cleanup...
+    - name: cleanup {{ kubernetes_helm_tmp_archive }}
       become: yes
       become_user: root
       file:
-        path: /tmp/{{ kubernetes_helm_archive }}
+        path: '{{ kubernetes_helm_tmp_archive }}'
         state: absent
 
-- name: link
+- name: link executables in {{ kubernetes_helm_bin_dir }} to those in {{ kubernetes_helm_install_subdir }}
   become: yes
   become_user: root
   with_items:
     - helm
   file:
-    src: '{{ kubernetes_helm_install_dir }}/{{ kubernetes_helm_platform }}/{{ item }}'
+    src: '{{ kubernetes_helm_install_subdir }}/{{ item }}'
     dest: '{{ kubernetes_helm_bin_dir }}/{{ item }}'
     state: link
