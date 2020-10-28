@@ -1,4 +1,9 @@
 ---
 - hosts: all
   roles:
-    - role: '{{playbook_dir}}'
+    - role: '{{ playbook_dir }}'
+  tasks:
+    - command: /usr/local/bin/helm version
+      register: kubernetes_helm_test_output
+    - debug:
+        msg: '{{ kubernetes_helm_test_output.stdout }}'
