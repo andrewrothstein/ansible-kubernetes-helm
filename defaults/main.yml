@@ -6,6 +6,7 @@ kubernetes_helm_arch: amd64
 kubernetes_helm_archive_type: tar.gz
 
 kubernetes_helm_bin_dir: /usr/local/bin
+kubernetes_helm_bin_filename: helm
 
 kubernetes_helm_checksums:
   v2.7.2:
