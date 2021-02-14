@@ -45,7 +45,7 @@
   become: yes
   become_user: root
   with_items:
-    - {{ kubernetes_helm_bin_filename }}
+    - "{{ kubernetes_helm_bin_filename }}"
   file:
     src: '{{ kubernetes_helm_install_subdir }}/{{ item }}'
     dest: '{{ kubernetes_helm_bin_dir }}/{{ item }}'

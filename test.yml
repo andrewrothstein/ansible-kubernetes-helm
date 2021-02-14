@@ -3,7 +3,7 @@
   roles:
     - role: '{{ playbook_dir }}'
   tasks:
-    - command: {{ kubernetes_helm_bin_dir }}/{{ kubernetes_helm_bin_filename }} version
+    - command: "{{ kubernetes_helm_bin_dir + '/' + kubernetes_helm_bin_filename }} version"
       register: kubernetes_helm_test_output
     - debug:
         msg: '{{ kubernetes_helm_test_output.stdout }}'
