@@ -47,6 +47,6 @@
   with_items:
     - "{{ kubernetes_helm_bin_filename }}"
   file:
-    src: '{{ kubernetes_helm_install_subdir }}/{{ item }}'
+    src: '{{ kubernetes_helm_install_subdir }}/helm'
     dest: '{{ kubernetes_helm_bin_dir }}/{{ item }}'
     state: link
