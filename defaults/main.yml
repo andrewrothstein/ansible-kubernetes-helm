@@ -5,7 +5,7 @@ kubernetes_helm_os: linux
 kubernetes_helm_arch: amd64
 kubernetes_helm_archive_type: tar.gz
 
-kubernetes_helm_bin_dir: /usr/local/bin
+kubernetes_helm_parent_install_dir: /usr/local
 
 kubernetes_helm_checksums:
   v2.7.2:

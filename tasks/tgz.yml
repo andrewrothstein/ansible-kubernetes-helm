@@ -41,12 +41,11 @@
         path: '{{ kubernetes_helm_tmp_archive }}'
         state: absent
 
-- name: link executables in {{ kubernetes_helm_bin_dir }} to those in {{ kubernetes_helm_install_subdir }}
+- name: creating link in {{ kubernetes_helm_link_bin_dir }} to {{ kubernetes_helm_install_exe }}
   become: yes
   become_user: root
-  with_items:
-    - helm
+  with_items: '{{ kubernetes_helm_links }}'
   file:
-    src: '{{ kubernetes_helm_install_subdir }}/{{ item }}'
-    dest: '{{ kubernetes_helm_bin_dir }}/{{ item }}'
+    src: '{{ kubernetes_helm_install_exe }}'
+    dest: '{{ item }}'
     state: link
