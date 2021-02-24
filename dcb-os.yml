@@ -4,6 +4,7 @@
 - archlinux_latest
 - centos_7
 - centos_8
+- debian_bullseye
 - debian_buster
 - debian_stretch
 - fedora_31
