@@ -1,7 +1,7 @@
 ---
 dependencies:
   - role: andrewrothstein.unarchive-deps
-    version: v1.1.5
+    version: v1.2.0
 galaxy_info:
   author: Andrew Rothstein
   company: BlackRock
