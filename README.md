@@ -1,6 +1,6 @@
 andrewrothstein.kubernetes-helm
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-kubernetes-helm.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-kubernetes-helm)
+![Build Status](https://github.com/andrewrothstein/ansible-kubernetes-helm/actions/workflows/build.yml/badge.svg)
 
 Installs Kubernetes [Helm](https://helm.sh)
 
