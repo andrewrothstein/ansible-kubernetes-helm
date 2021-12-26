@@ -1,7 +1,7 @@
 ---
 dependencies:
   - role: andrewrothstein.unarchive-deps
-    version: v1.2.1
+    version: v1.2.2
 galaxy_info:
   author: Andrew Rothstein
   company: BlackRock
@@ -31,6 +31,7 @@ galaxy_info:
     - name: Fedora
       versions:
         - 34
+        - 35
     - name: macOS
       versions:
         - all
