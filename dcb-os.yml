@@ -3,7 +3,6 @@
 - alpine_3.15
 - alpine_edge
 - archlinux_latest
-- centos_8
 - debian_bullseye
 - debian_buster
 - fedora_35
