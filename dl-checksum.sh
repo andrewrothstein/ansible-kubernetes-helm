@@ -13,13 +13,14 @@ dl()
     local file=helm-${ver}-${platform}.${archive_type}.sha256
     local url=$MIRROR/$file
     printf "    # %s\n"  $url
-    printf "    %s: sha256:%s\n" $platform `curl -SsL $url`
+    printf "    %s: sha256:%s\n" $platform $(curl -SsLf $url)
 }
 
 dl_ver () {
     local ver=$1
     printf "  %s:\n" $ver
-    dl $ver  darwin amd64 tar.gz
+    dl $ver darwin amd64 tar.gz
+    dl $ver darwin arm64 tar.gz
     dl $ver linux amd64 tar.gz
     dl $ver linux arm tar.gz
     dl $ver linux arm64 tar.gz
@@ -28,4 +29,4 @@ dl_ver () {
     dl $ver windows amd64 zip
 }
 
-dl_ver ${1:-v3.8.0}
+dl_ver ${1:-v3.8.1}
