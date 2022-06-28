@@ -1,6 +1,6 @@
 ---
-- alpine_3.14
 - alpine_3.15
+- alpine_3.16
 - alpine_edge
 - archlinux_latest
 - debian_bullseye
@@ -10,3 +10,4 @@
 - rockylinux_8
 - ubuntu_bionic
 - ubuntu_focal
+- ubuntu_jammy

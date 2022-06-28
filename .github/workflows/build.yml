@@ -21,8 +21,8 @@ jobs:
     strategy:
       matrix:
         os:
-        - alpine_3.14
         - alpine_3.15
+        - alpine_3.16
         - alpine_edge
         - archlinux_latest
         - debian_bullseye
@@ -32,6 +32,7 @@ jobs:
         - rockylinux_8
         - ubuntu_bionic
         - ubuntu_focal
+        - ubuntu_jammy
         python-versions:
         - '3.9'
 name: dcb
