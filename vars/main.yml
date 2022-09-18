@@ -1,5 +1,5 @@
 ---
-kubernetes_helm_platform: '{{ kubernetes_helm_os }}-{{ kubernetes_helm_arch }}'
+kubernetes_helm_platform: '{{ kubernetes_helm_os }}-{{ kubernetes_helm_arch_map[ansible_architecture] }}'
 kubernetes_helm_name: helm-{{ kubernetes_helm_ver }}-{{ kubernetes_helm_platform }}
 kubernetes_helm_archive: '{{kubernetes_helm_name}}.{{ kubernetes_helm_archive_type }}'
 kubernetes_helm_tmp_archive: /tmp/{{ kubernetes_helm_archive }}

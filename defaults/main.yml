@@ -2,6 +2,14 @@
 kubernetes_helm_mirror: https://get.helm.sh
 kubernetes_helm_ver: v3.9.4
 kubernetes_helm_os: linux
+kubernetes_helm_arch_map:
+  386: 386
+  armv6l: arm
+  armv7l: arm
+  aarch64: arm64
+  x86_64: amd64
+  ppc64le: ppc64le
+  s390x: s390x
 kubernetes_helm_arch: amd64
 kubernetes_helm_archive_type: tar.gz
 

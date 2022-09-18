@@ -1,6 +1,4 @@
 ---
-dependencies:
-  - andrewrothstein.unarchive-deps
 galaxy_info:
   author: Andrew Rothstein
   company: BlackRock
