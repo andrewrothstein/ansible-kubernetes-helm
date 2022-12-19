@@ -1,6 +1,6 @@
 ---
-- alpine_3.15
 - alpine_3.16
+- alpine_3.17
 - alpine_edge
 - archlinux_latest
 - debian_bullseye
