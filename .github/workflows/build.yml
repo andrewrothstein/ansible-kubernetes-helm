@@ -15,7 +15,7 @@ jobs:
     - name: task ver
       run: task --version
     - name: download task mono
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         path: taskmono
         ref: develop
@@ -27,17 +27,16 @@ jobs:
       fail-fast: false
       matrix:
         os:
-        - alpine_3.16
         - alpine_3.17
+        - alpine_3.18
         - alpine_edge
         - archlinux_latest
+        - debian_bookworm
         - debian_bullseye
-        - debian_buster
-        - fedora_36
         - fedora_37
+        - fedora_38
         - rockylinux_8
         - rockylinux_9
-        - ubuntu_bionic
         - ubuntu_focal
         - ubuntu_jammy
         python-version:
